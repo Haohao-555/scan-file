@@ -1,0 +1,243 @@
+#app {
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+
+#app .option {
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 3px solid #000;
+}
+
+#app .option .position {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#app .option .position .storage {
+  width: 300px;
+  height: 75px;
+  margin-right: 12px;
+  padding: 0px 6px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  margin: 12px;
+}
+
+#app .option .position .storage:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#app .option .position .storage .info {
+  padding-left: 12px;
+  padding-top: 12px;
+}
+
+#app .option .position .storage .info .local {
+  font-size: 14px;
+}
+
+#app .option .position .storage .info .con {
+  height: 15px;
+  width: 220px;
+  border: 1px solid #333;
+  position: relative;
+}
+
+#app .option .position .storage .info .con .take {
+  position: absolute;
+  top: 0px;
+  width: 40px;
+  height: 15px;
+  background-color: rgb(38, 160, 218);
+}
+
+#app .option .position .storage .icon {
+  width: 75px;
+  height: 75px;
+  background: url(../img/storage.png) no-repeat;
+  background-size: contain;
+}
+
+#app .option .position .storage .detail {
+  font-size: 12px;
+}
+
+#app .option .path {
+  display: flex;
+  padding: 12px 0px 0px 0px;
+}
+
+#app .option .path .crumbs {
+  padding: 6px 6px 6px 0px;
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+}
+
+#app .option .path .crumbs span {
+  display: block;
+  height: 100%;
+  margin: 0px 6px;
+  padding: 0px 6px;
+}
+
+#app .option .path .crumbs span:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#app .option .path .choose {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80px;
+  height: 44px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+#app .option .path .choose .box {
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#app .option .path .choose .back-active {
+  background-image: url(../img/back-active.png);
+}
+
+#app .option .path .choose .back {
+  background-image: url(../img/back.png);
+}
+
+#app .option .path .choose .forward-active {
+  background-image: url(../img/forward-active.png);
+}
+
+#app .option .path .choose .forward {
+  background-image: url(../img/forward.png);
+}
+
+#app .option .path .choose .up {
+  background-image: url(../img/up.png);
+}
+
+#app .option .path .choose .up-active {
+  background-image: url(../img/up-active.png);
+}
+
+#app .option .back:hover {
+  cursor: pointer;
+}
+
+#app .content {
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+#app .content table tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+#app .content table tr td {
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+#app .content table thead tr td {
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#app .content table thead tr td:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+#app .content table thead tr td .icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 20px;
+}
+
+#app .content table thead tr td .ascend {
+  background: url(../img/ascend.png) no-repeat;
+  background-size: contain;
+}
+
+#app .content table thead tr td .descend {
+  background: url(../img/descending.png) no-repeat;
+  background-size: contain;
+}
+
+#app .content table thead tr .time .th-td-container {
+  width: 200px;
+}
+
+#app .content table thead tr .type .th-td-container {
+  width: 100px;
+}
+
+#app .content table thead tr .size .th-td-container {
+  width: 60px;
+}
+
+#app .content table thead tr .name .th-td-container {
+  width: 318px;
+}
+
+#app .content table tbody tr td .td-name-container {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 274px;
+  float: right;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+#app .content tbody tr .name .td-container {
+  width: 200px;
+}
+
+#app .content tbody tr td:nth-child(4) .td-container {
+  padding-right: 20px;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+#app .content table tbody tr td .td-container:hover {
+  cursor: pointer;
+}
+
+#app .content table tbody tr td .icon-folder {
+  float: left;
+  padding-top: 6px;
+  background: url(../img/folder.png) no-repeat;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+}
+
+#app .content table tbody tr td .icon-permission {
+  float: left;
+  padding-top: 6px;
+  background: url(../img/permission.png) no-repeat;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+}
+
+#app .content table tbody tr td .icon-file {
+  float: left;
+  background: url(../img/file.png) no-repeat;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+}

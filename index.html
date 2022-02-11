@@ -1,0 +1,63 @@
+<!--
+ * @Date: 2022-02-09 22:39:45
+ * @Author: 浩
+ * @LastEditors: 浩
+ * @FilePath: \scan-file\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>文件</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <!-- 选项 -->
+      <div class="option">
+        <div class="position"></div>
+        <div class="path">
+          <div class="choose">
+            <span class="back box"></span>
+            <span class="forward box"></span>
+          </div>
+          <div class="crumbs"></div>
+        </div>
+      </div>
+      <!-- 文件内容 -->
+      <div class="content">
+        <table cellspacing="0">
+          <thead>
+            <tr>
+              <td class="name" onclick="titleSort('name')">
+                <div class="icon ascend" data-flag="1"></div>
+                <div class="th-td-container">名称</div>
+              </td>
+              <td class="time" onclick="titleSort('time')">
+                <div class="icon" data-flag="1"></div>
+                <div class="th-td-container">修改时间</div>
+              </td>
+              <td class="type" onclick="titleSort('type')" data-flag="0">
+                <div class="th-td-container">类型</div>
+              </td>
+              <td class="size" onclick="titleSort('size')">
+                <div class="icon" data-flag="1"></div>
+                <div class="th-td-container">大小</div>
+              </td>
+              <td class="permise">
+                <div class="th-td-container">权限</div>
+              </td>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script src="./js/util.js"></script>
+  <script src="./js/render.js"></script>
+  <script type="text/javascript" src="./js/file.js"></script>
+</html>

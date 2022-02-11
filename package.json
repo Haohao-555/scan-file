@@ -1,0 +1,23 @@
+{
+  "main": "index.html",
+  "name": "tree",
+  "window": {
+      "title": "tree",
+      "icon": "./favicon.ico",
+      "toolbar": true,
+      "width": 1280,
+      "height": 800,
+      "min_width": 1000,
+      "min_height": 600,
+      "position": "center"
+  },
+  "webkit": {
+      "plugin": true,
+      "java": false,
+      "page-cache": false
+  },
+  "dependencies": {
+      "diskinfo": "^0.0.3"
+  }
+}
+
